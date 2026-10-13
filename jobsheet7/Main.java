@@ -10,6 +10,9 @@ public class Main {
         boolean result = savings.withdraw(250000);
         System.out.println("Withdraw 250000 allowed?" + result);
 
-        
+        Bank bank = new Bank (10);
+        bank.addAccount(savings);
+        bank.addAccount(checking);
+        bank.printAllAccounts();
     }
 }
