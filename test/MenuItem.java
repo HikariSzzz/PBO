@@ -1,0 +1,42 @@
+package test;
+
+/**
+ * A single item on the cafe menu.
+ */
+public class MenuItem {
+
+    private String name;
+    private double price;
+
+    /**
+     * Creates a menu item and stores both parameters into the fields.
+     *
+     * @param name  item name
+     * @param price price in Rupiah
+     */
+    public MenuItem(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    /**
+     * Updates the price. A negative price is invalid:
+     * ignore it and leave the field unchanged.
+     *
+     * @param price new price in Rupiah
+     */
+    public void setPrice(double price) {
+        if (price < 0) {
+            return;
+        }
+        this.price = price;
+    }
+}
