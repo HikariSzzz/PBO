@@ -1,4 +1,4 @@
-package id.ac.polinema;
+package jobsheet6;
 
 public class BusinessAccount extends Account {
     private double monthlyTransactionFee;

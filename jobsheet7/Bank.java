@@ -1,4 +1,4 @@
-package jobsheet7;
+package Jobsheet7;
 
 public class Bank {
     private Account[] accounts;

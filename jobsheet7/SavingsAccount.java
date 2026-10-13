@@ -1,4 +1,4 @@
-package jobsheet7;
+package Jobsheet7;
 
 public class SavingsAccount extends Account {
     private static final double MINIMUM_BALANCE = 50000;

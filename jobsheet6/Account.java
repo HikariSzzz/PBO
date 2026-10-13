@@ -1,4 +1,4 @@
-package id.ac.polinema;
+package jobsheet6;
 
 public class Account {
     private String accountNumber;

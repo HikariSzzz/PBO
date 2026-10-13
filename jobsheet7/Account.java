@@ -1,4 +1,4 @@
-package jobsheet7;
+package Jobsheet7;
 
 public class Account {
     private String accountNumber;
@@ -36,6 +36,14 @@ public class Account {
             return false;
         }
         balance -= amount;
+        return true;
+    }
+
+    public boolean deposit(double amount, String note){
+        if (!deposit(amount)) {
+            return false;
+        }
+        System.out.println(accountNumber + " deposit note: " + note);
         return true;
     }
 
